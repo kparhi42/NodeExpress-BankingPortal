@@ -1,0 +1,14 @@
+<%- include('header.ejs') %> 
+<div class='container'>
+    <h1><%= title %></h1>
+    <a href='/profile'>
+        Profile
+    </a><br/>
+    <a href='/transfer'>
+        Transfer
+    </a>
+</div>
+<%- include('summary.ejs',{account:accounts.savings}); %>
+<%- include('summary.ejs',{account:accounts.checking}); %>
+<%- include('summary.ejs',{account:accounts.credit}); %>
+<%- include('footer.ejs') %> 
